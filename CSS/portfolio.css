@@ -1,0 +1,478 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #000; */
+}
+
+
+.portfolio{
+    background-color: #000;
+    min-height: 640px;
+    
+    /* background: url(bgwave2.gif) no-repeat;
+    background-size: cover; */
+    
+}
+
+
+/* sidebar starts */
+.nav-cir{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 1px solid #767676;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.navicon{
+    color: #fff;
+    font-size: 20px;
+}
+.nav-cir:hover{
+    border:1px solid #edb72b;
+}
+.nav-cir:hover .navicon{
+    color: #edb72b;
+}
+.nav-icons{
+    padding-top: 20px;
+    position: fixed;
+    height: 50%;
+    background-color: #111;
+    border: 1px solid #767676;
+    border-radius: 30px;
+    width: 60px;
+}
+.home-nav{
+    color: #fff;
+}
+.home-nav:hover{
+    color: #edb72b;
+    font-size: 24px;
+}
+
+/* sidebar ends */
+
+/* subtitle start */
+.subtitle {
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    border: 1px solid #565656;
+    padding: 9px 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+.subtitle i {
+    margin-bottom: 1px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+/* subtitle end */
+
+
+/* The side navigation menu */
+.sidenav-float{
+    top: 0;
+    right: 0;
+    padding-right: 53px;
+    position: fixed;
+       
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    overflow-x: hidden;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 42px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #edb72b;
+    font-size: 18px;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  
+/* preloader section start */
+.preloader{
+    background: #000  url(load.gif) no-repeat center center;
+    background-size: 30%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.disppear{
+    animation:vanish 4s forwards;
+  }
+    @keyframes vanish {
+      100%{
+       opacity:0;
+       visibility:hidden;
+      }
+  }
+/* preloader section end */
+
+
+
+/* PROFILE SECTION STARTS */
+.profile{
+    height: auto;
+    border: 2px solid #767676;
+    border-radius: 20px;
+    padding: 25px;
+    position: fixed;
+}
+.profile-1{
+    height: auto;
+    border: 2px solid #767676;
+    border-radius: 20px;
+    padding: 25px;
+}
+.profile-socialicons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; 
+    height: 50px; 
+    border: 2px solid #767676; 
+    border-radius: 50%; 
+    text-align: center;
+    font-weight: bold; 
+}
+.icn{
+    color: #767676;
+}
+.profile-socialicons:hover{
+    border: 2px solid #edb72b; 
+}
+.profile-socialicons:hover .icn{
+    color: #edb72b;
+}
+.env{
+    color: black;
+    font-size: 20px;
+}
+.profile-button{
+    border: 0px;
+    font-size: 20px;
+    background-color: #edb72b;
+}
+.profile-button:hover{
+    color: #edb72b;
+    background-color: black;
+    border: 2px solid #edb72b;
+    text-shadow: 0px 0px 6px #edb72b;
+}
+.profile-button:hover .env{
+    color: #edb72b;
+    
+}
+/* PROFILE SECTION END */
+
+
+
+
+/* introduction section starts */
+.animate__animated.animate__fadeInUp {
+    --animate-duration: 1s;      
+  }
+/* introduction section end */
+
+
+
+
+/* rotating  circle starts */
+.rotating-circle{
+    width: 175px;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    border-radius: 50%;
+    border: 1px solid #767676;
+    position: relative;
+    overflow: hidden;
+    margin-right: 15px;
+}
+.go-to-project-btn{
+    animation: rotate 5s  linear infinite ;
+}
+.rotating-circle i{
+    position: absolute;
+    color: #fff;
+    font-size: 37px;
+    display: block;
+}
+@keyframes rotate{
+    to{ transform: rotate(360deg); }
+  }
+.rotating-circle-icon{
+    position: absolute;
+}
+/* rotating  circle ends */
+
+
+
+
+/* education start */
+.education-items-line{
+    border: 2px solid #767676 ; 
+    margin: 60px;
+    position: relative;
+}
+ .education-items-dot{
+    content: " ";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #767676;
+    position: absolute;
+    margin-left: -69px;
+ }
+.education-items:hover .education-items-dot{
+    background-color: #edb72b;
+}
+.education-items-year{
+    color: #767676;
+}
+.education-items:hover .education-items-year{
+    color: #edb72b;
+}
+/* education end */
+
+
+/* skills sec start */
+.skills-cards{
+    height: 250px;
+    width: 180px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 1.5px solid #767676;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-cards-icon{
+    font-size: 75px;
+    color: #edb72b;
+    text-align: center;
+}
+.skills-cards-perc{
+    font-size: 20px;
+    color: #fff;
+   text-align: center;
+}
+.skills-cards-heading{
+    font-size: 16px;
+    color: #fff;
+   text-align: center;
+}
+.skills-cards:hover{
+    border:2px solid #edb72b;
+    height:260px;
+    width: 190px;
+}
+.skills-cards:hover .skills-cards-icon{
+    color: #fff;
+}
+.skills-cards:hover .skills-cards-perc{
+    color: #edb72b;
+}
+.skills-cards:hover .skills-cards-heading{
+    color: #edb72b;
+}
+/* skills sec end */
+
+
+/* prject section start */
+.photo-gallery p {
+    color:#7d8285;
+  }
+  
+  .photo-gallery h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:inherit;
+  }
+  
+  @media (max-width:767px) {
+    .photo-gallery h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+    }
+  }
+  
+  .photo-gallery .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto 40px;
+  }
+  
+  .photo-gallery .intro p {
+    margin-bottom:0;
+  }
+  
+  .photo-gallery .photos {
+    padding-bottom:20px;
+  }
+  
+  .photo-gallery .item {
+    padding-bottom:30px;
+  }
+  .project-item:hover{
+    animation: bounce; 
+    animation-duration: 2s; 
+  }
+  /* project section end */
+  
+  /* contact section start */
+  .input-group label {
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 2px;
+    }
+   .input-group label sup {
+    color: #fc4545;
+    font-size: 12px;
+    top: 0;
+    }
+    .input-group select,
+    .input-group textarea,
+    .input-group input {
+        display: block;
+        color: #fff;
+        width: 100%;
+        border: none;
+        background: none;
+        font-size: 18px;
+        padding: 0;
+        transition: .2s;
+        padding-bottom: 3px;
+        outline: none;
+        box-shadow: none;
+        border-color: #555555;
+    }
+    .input-group textarea::placeholder,
+    .input-group input::placeholder {
+        color: #666666;
+    }
+     textarea {
+        height: 140px;
+        border-bottom: 2px solid #767676;
+        resize: none;
+    }
+    .upload-attachment {
+        position: relative;
+    }
+    .upload-attachment label {
+        overflow: hidden;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .upload-attachment label i {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 2px;
+    }
+    .upload-attachment input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+    submit-btn-wrap {
+        margin-bottom: 0;
+        margin-top: 18px;
+    }
+    .theme-btn {
+        background: #edb72b;
+        color: #000000;
+        display: block;
+        text-align: center;
+        padding: 14px 60px 13px 60px;
+        display: inline-flex;
+        align-items: center;
+        border-radius: 30px;
+        justify-content: center;
+        text-transform: uppercase;
+        border: none;
+        transition: .3s;
+        cursor: pointer;
+        border: 2px solid var(--primary_color);
+    }
+    .theme-btn i {
+        font-size: 24px;
+        margin-right: 10px;
+        display: block;
+        margin-bottom: 3px;
+    }
+    .theme-btn:hover {
+        background: none;
+        border: 1px solid #edb72b;
+        color: #edb72b;
+    }
+  /* contact section end */
